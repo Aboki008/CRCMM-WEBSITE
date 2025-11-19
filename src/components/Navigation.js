@@ -27,7 +27,7 @@ const Navigation = ({ onOpenDonate, whatsappNumber = '2348033059716' }) => {
       {/* Donate button - opens modal via prop */}
       <button
         onClick={onOpenDonate}
-        className="font-medium text-primary hover:underline"
+        className="font-medium text-primary hover:text-primary transition-colors duration-200 bg-transparent border-0 p-0 cursor-pointer"
         aria-label="Donate"
       >
         Donate

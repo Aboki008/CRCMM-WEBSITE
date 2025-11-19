@@ -35,7 +35,7 @@ const About = () => {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6"></div>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed max-w-2xl mx-auto">
-              CRCMM Foundation is a community-driven NGO committed to empowering individuals and families
+              CRCMM Foundation is a FAITH-BASED NON-GOVERNMENTAL ORGANIZATION committed to empowering individuals and families
               through sustainable development. We believe in the power of education, livelihoods, health,
               and collective action to transform lives.
             </p>

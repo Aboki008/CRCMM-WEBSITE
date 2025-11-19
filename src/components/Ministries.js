@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { FaGraduationCap, FaTools, FaHeart, FaAmbulance, FaBullhorn, FaHandsHelping } from 'react-icons/fa';
 import DonationsModal from './DonationsModal';
 
 const programs = [
@@ -7,46 +8,46 @@ const programs = [
     id: 'education',
     title: 'Education & Scholarships',
     desc: 'Supporting children and adults with access to learning, scholarships, and literacy programs.',
-    emoji: '🎓',
+    icon: FaGraduationCap,
   },
   {
     id: 'livelihoods',
     title: 'Livelihoods & Skills',
     desc: 'Vocational training and micro-enterprise support to increase household incomes.',
-    emoji: '🛠️',
+    icon: FaTools,
   },
   {
     id: 'health',
     title: 'Health & Wellbeing',
     desc: 'Community health camps, maternal care, and mental health awareness initiatives.',
-    emoji: '❤️',
+    icon: FaHeart,
   },
   {
     id: 'relief',
     title: 'Emergency Relief',
     desc: 'Rapid response and relief distribution when disasters strike.',
-    emoji: '🚑',
+    icon: FaAmbulance,
   },
   {
     id: 'advocacy',
     title: 'Advocacy & Rights',
     desc: 'Empowering communities to know their rights and access services.',
-    emoji: '📣',
+    icon: FaBullhorn,
   },
   {
     id: 'volunteer',
     title: 'Volunteer Programs',
     desc: 'Meaningful volunteer opportunities for individuals and corporate partners.',
-    emoji: '🤝',
+    icon: FaHandsHelping,
   },
 ];
 
-// Unsplash placeholder images (replace with your own assets later)
+// Local gallery images served from public/images
 const sampleImages = [
-  'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80',
-  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1400&q=80',
-  'https://images.unsplash.com/photo-1584467735874-0f9b0c5b5a5c?auto=format&fit=crop&w=1400&q=80',
-  'https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1400&q=80',
+  '/images/faith.jpeg',
+  '/images/giving1.jpg',
+  '/images/love.jpeg',
+  '/images/giving2.jpg',
 ];
 
 const Ministries = () => {
@@ -136,7 +137,9 @@ const Ministries = () => {
             >
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xl font-semibold">
-                  <span aria-hidden="true">{p.emoji}</span>
+                  <span aria-hidden="true">
+                    <p.icon className="w-6 h-6" />
+                  </span>
                 </div>
                 <div>
                   <h3 id={`${p.id}-title`} className="text-lg font-semibold text-gray-900">
@@ -279,11 +282,22 @@ const Ministries = () => {
       </div>
 
       {/* Floating WhatsApp icon (always present) */}
+      <style>{`
+        @keyframes whatsappPulse {
+          0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+          70% { transform: scale(1.06); box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+          100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .whatsapp-floating {
+          animation: whatsappPulse 2.8s ease-out infinite;
+        }
+      `}</style>
+
       <a
         href={`https://wa.me/${whatsappNumber}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed right-5 bottom-5 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:scale-105 transition-transform"
+        className="fixed right-5 bottom-5 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:scale-105 transition-transform whatsapp-floating"
         aria-label="Chat with us on WhatsApp"
       >
         <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">

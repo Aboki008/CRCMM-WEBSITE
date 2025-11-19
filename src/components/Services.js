@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaBullseye, FaHospitalAlt, FaBook } from 'react-icons/fa';
 
 const Services = () => {
   const programs = [
@@ -6,7 +7,7 @@ const Services = () => {
       title: 'Skills Training',
       schedule: 'Bi-weekly',
       description: 'Vocational and digital skills workshops to improve employability',
-      icon: '🎯',
+      icon: FaBullseye,
       color: 'from-primary to-secondary',
       delay: '0s'
     },
@@ -14,7 +15,7 @@ const Services = () => {
       title: 'Health Drives',
       schedule: 'Monthly',
       description: 'Community health awareness camps and medical checkups',
-      icon: '🏥',
+      icon: FaHospitalAlt,
       color: 'from-accent to-primary',
       delay: '0.1s'
     },
@@ -22,7 +23,7 @@ const Services = () => {
       title: 'Education Support',
       schedule: 'Ongoing',
       description: 'Scholarships and tutoring for underprivileged children',
-      icon: '📚',
+      icon: FaBook,
       color: 'from-secondary to-accent',
       delay: '0.2s'
     }
@@ -71,8 +72,8 @@ const Services = () => {
               className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 overflow-hidden animate-slide-up"
               style={{ animationDelay: program.delay }}
             >
-              <div className={`bg-gradient-to-r ${program.color} h-24 flex items-center justify-center text-4xl`}>
-                {program.icon}
+              <div className={`bg-gradient-to-r ${program.color} h-24 flex items-center justify-center text-4xl text-white`}>
+                <program.icon className="w-10 h-10" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{program.title}</h3>

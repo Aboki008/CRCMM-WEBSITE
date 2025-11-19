@@ -47,7 +47,12 @@ const Header = () => {
               <Link to="/" className="text-gray-700 hover:text-primary font-medium">Home</Link>
               <Link to="/about" className="text-gray-700 hover:text-primary font-medium">About</Link>
               <Link to="/ministries" className="text-gray-700 hover:text-primary font-medium">Ministries</Link>
-              <button onClick={openDonate} className="text-gray-700 hover:text-primary text-left font-medium">Donate</button>
+              <button
+                onClick={openDonate}
+                className="text-gray-700 hover:text-primary font-medium text-left bg-transparent border-0 p-0"
+              >
+                Donate
+              </button>
               <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary font-medium">Contact</a>
             </nav>
           </div>
