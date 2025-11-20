@@ -21,8 +21,8 @@ const Header = () => {
               <span className="text-white font-bold text-lg">C</span>
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-800">CRCMM</h1>
-              <p className="text-xs text-secondary font-semibold">Community giving, sharing and empowerment</p>
+              <h1 className="text-2xl font-bold text-gray-800">CRCCM</h1>
+              <p className="text-xs text-secondary font-semibold">Christ The Redeemer Cares and Compassion Ministry</p>
             </div>
           </Link>
 

@@ -33,9 +33,9 @@ const DonationsModal = ({ isOpen, onClose, whatsappNumber = '2348033059716' }) =
           <div className="flex items-center justify-between">
             <div>
               <div className="text-sm text-gray-500">Account name</div>
-              <div className="font-medium">CRCMM Foundation</div>
+              <div className="font-medium">CRCCM Foundation</div>
             </div>
-            <button onClick={() => copy('CRCMM Foundation')} className="text-primary text-sm">Copy</button>
+            <button onClick={() => copy('CRCCM Foundation')} className="text-primary text-sm">Copy</button>
           </div>
 
           <div className="flex items-center justify-between">

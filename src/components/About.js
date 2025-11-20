@@ -31,37 +31,55 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              About CRCMM Foundation
+              Who We Are
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6"></div>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed max-w-2xl mx-auto">
-              CRCMM Foundation is a FAITH-BASED NON-GOVERNMENTAL ORGANIZATION committed to empowering individuals and families
-              through sustainable development. We believe in the power of education, livelihoods, health,
-              and collective action to transform lives.
+              Christ the Redeemer Cares and Compassion Ministry (CRCCM) shares the love of Christ with orphans, widows,
+              children and the less privileged by meeting their spiritual, physical and emotional needs in accordance
+              with Acts 10:38.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 border-l-4 border-primary animate-slide-up" style={{ animationDelay: '0s' }}>
+            <div
+              className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 border-l-4 border-primary animate-slide-up"
+              style={{ animationDelay: '0s' }}
+            >
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-primary text-2xl">❤️</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">Our Purpose</h3>
-              <p className="text-gray-600 text-center">Empower communities through sustainable programs in education, health, and livelihoods.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">Our Mission</h3>
+              <p className="text-gray-600 text-center">
+                To share the love of Christ with orphans, widows and the less privileged through programs, outreaches
+                and our weekly children&apos;s Bible club.
+              </p>
             </div>
-            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 border-l-4 border-secondary animate-slide-up" style={{ animationDelay: '0.1s' }}>
+            <div
+              className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 border-l-4 border-secondary animate-slide-up"
+              style={{ animationDelay: '0.1s' }}
+            >
               <div className="w-14 h-14 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-primary text-2xl">🤝</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">Our Values</h3>
-              <p className="text-gray-600 text-center">Integrity, transparency, inclusivity, and partnership guide everything we do.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">Our Vision</h3>
+              <p className="text-gray-600 text-center">
+                To reflect the heart of Jesus, restoring hope to the hurting and building a society where orphans,
+                widows, children and the vulnerable are well cared for.
+              </p>
             </div>
-            <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 border-l-4 border-accent animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <div
+              className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 border-l-4 border-accent animate-slide-up"
+              style={{ animationDelay: '0.2s' }}
+            >
               <div className="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-accent text-2xl">🌱</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">Our Approach</h3>
-              <p className="text-gray-600 text-center">Community-led, data-driven solutions that create measurable, long-term impact.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">What We Do</h3>
+              <p className="text-gray-600 text-center">
+                Through children&apos;s Bible clubs, back-to-school support, food and hygiene projects and widows outreach,
+                we bring practical help and the warm embrace of Christ&apos;s love.
+              </p>
             </div>
           </div>
 

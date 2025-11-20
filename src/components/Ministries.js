@@ -5,39 +5,39 @@ import DonationsModal from './DonationsModal';
 
 const programs = [
   {
-    id: 'education',
-    title: 'Education & Scholarships',
-    desc: 'Supporting children and adults with access to learning, scholarships, and literacy programs.',
+    id: 'bible-club',
+    title: "Children's Bible Club",
+    desc: 'Weekly Bible clubs where children are nurtured in the Word of God and experience the love of Christ.',
     icon: FaGraduationCap,
   },
   {
-    id: 'livelihoods',
-    title: 'Livelihoods & Skills',
-    desc: 'Vocational training and micro-enterprise support to increase household incomes.',
+    id: 'back-to-school',
+    title: 'Back to School Program',
+    desc: 'Supporting pupils and students with school supplies, fees and encouragement so they can return to school with dignity.',
     icon: FaTools,
   },
   {
-    id: 'health',
-    title: 'Health & Wellbeing',
-    desc: 'Community health camps, maternal care, and mental health awareness initiatives.',
+    id: 'food-bank',
+    title: 'Food Bank Project',
+    desc: 'Providing food items to orphans, widows and individuals in need, reflecting the compassion of Jesus in a practical way.',
     icon: FaHeart,
   },
   {
-    id: 'relief',
-    title: 'Emergency Relief',
-    desc: 'Rapid response and relief distribution when disasters strike.',
+    id: 'hygiene',
+    title: 'Hygiene Project',
+    desc: 'Promoting cleanliness and dignity through hygiene packs, awareness and support for children and vulnerable families.',
     icon: FaAmbulance,
   },
   {
-    id: 'advocacy',
-    title: 'Advocacy & Rights',
-    desc: 'Empowering communities to know their rights and access services.',
+    id: 'widows-outreach',
+    title: 'Widows Outreach',
+    desc: 'Reaching out to widows with care, encouragement and support, reminding them they are seen, valued and loved by God.',
     icon: FaBullhorn,
   },
   {
-    id: 'volunteer',
-    title: 'Volunteer Programs',
-    desc: 'Meaningful volunteer opportunities for individuals and corporate partners.',
+    id: 'compassion-care',
+    title: 'Compassion & Care Outreach',
+    desc: 'Sharing the warm embrace of Christ’s love with orphans, children, the less privileged and vulnerable through visits and support.',
     icon: FaHandsHelping,
   },
 ];
@@ -98,9 +98,9 @@ const Ministries = () => {
             Our Programs & Initiatives
           </h2>
           <p className="text-gray-700 text-lg">
-            We work alongside communities to create lasting, sustainable impact through education,
-            livelihoods, healthcare, emergency relief and advocacy. Learn how we serve people and how
-            you can partner with us.
+            CRCCM shares the love of Christ in practical ways through children&apos;s Bible clubs, back to school
+            support, food and hygiene projects and dedicated widows outreach. Explore how these programs touch
+            lives with compassion and how you can partner with us.
           </p>
         </div>
 

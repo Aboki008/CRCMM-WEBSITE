@@ -59,7 +59,7 @@ const Hero = () => {
             <span className="tracking-wide uppercase text-xs lg:text-[0.7rem]">Faith in action Giving, sharing, hope</span>
           </div>
 
-          <h1 className="text-4xl lg:text-6xl font-bold mb-4 font-serif">Welcome to CRCMM Foundation</h1>
+          <h1 className="text-4xl lg:text-6xl font-bold mb-4 font-serif">Welcome to CRCCM Foundation</h1>
           <p className="text-xl lg:text-2xl mb-6 font-light">Sharing resources, empowering communities, restoring hope.</p>
           <p className="text-lg mb-8 opacity-90 text-gray-100">
             We partner with local communities to provide education, healthcare, livelihoods and emergency

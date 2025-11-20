@@ -14,7 +14,7 @@ const Footer = () => {
                 <span className="text-white font-bold">C</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold">CRCMM Foundation</h3>
+                <h3 className="text-xl font-bold">CRCCM Foundation</h3>
                 <p className="text-secondary text-sm">Empowering communities through giving & service</p>
               </div>
             </div>
@@ -51,9 +51,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-200">
-              <li>📍 Suite 4, Community Center, City</li>
+              <li>📍 25 Jubud Estate Little Rayfield. Jos Plateau State.</li>
               <li>📞 <a href="tel:+2348033059716" className="hover:text-white">+234 803 305 9716</a></li>
-              <li>✉️ <a href="mailto:info@crcmm.org" className="hover:text-white">info@crcmm.org</a></li>
+              <li>📞 <a href="tel:+2347011035443" className="hover:text-white">+234 701 103 5443</a></li>
+              <li>✉️ <a href="mailto:info@crccm.org" className="hover:text-white">info@crccm.org</a></li>
               <li>
                 <a href="https://wa.me/2348033059716" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary hover:text-white">
                   <FaWhatsapp className="w-4 h-4" aria-hidden />
@@ -66,7 +67,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 pt-8 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} CRCMM Foundation. All rights reserved. | Empowering communities through giving & service
+            © {new Date().getFullYear()} CRCCM Foundation. All rights reserved. | Empowering communities through giving & service
           </p>
         </div>
       </div>
