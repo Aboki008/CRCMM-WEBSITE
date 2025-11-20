@@ -57,6 +57,9 @@ const Ministries = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
   const galleryImages = sampleImages.concat(sampleImages);
+  const [beneficiaries, setBeneficiaries] = useState(0);
+  const [projects, setProjects] = useState(0);
+  const [volunteers, setVolunteers] = useState(0);
 
   const openLightbox = (i) => {
     setLightboxIndex(i);
@@ -83,6 +86,31 @@ const Ministries = () => {
       setCurrent((c) => (c + 1) % sampleImages.length);
     }, 4000);
     return () => clearInterval(timer);
+  }, []);
+
+  // simple count-up animation for stats
+  useEffect(() => {
+    const targetBeneficiaries = 12000;
+    const targetProjects = 85;
+    const targetVolunteers = 450;
+    const duration = 1500; // ms
+    const fps = 60;
+    const totalSteps = Math.round((duration / 1000) * fps);
+    let step = 0;
+
+    const interval = setInterval(() => {
+      step += 1;
+      const progress = Math.min(step / totalSteps, 1);
+      setBeneficiaries(Math.round(targetBeneficiaries * progress));
+      setProjects(Math.round(targetProjects * progress));
+      setVolunteers(Math.round(targetVolunteers * progress));
+
+      if (progress === 1) {
+        clearInterval(interval);
+      }
+    }, duration / totalSteps);
+
+    return () => clearInterval(interval);
   }, []);
 
   const openDonations = () => setIsModalOpen(true);
@@ -165,15 +193,15 @@ const Ministries = () => {
         <div className="mt-4 bg-white rounded-xl p-6 shadow flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex-1 grid grid-cols-3 gap-4 text-center">
             <div>
-              <div className="text-2xl font-bold text-gray-900">12k+</div>
+              <div className="text-2xl font-bold text-gray-900">{beneficiaries.toLocaleString()}+</div>
               <div className="text-sm text-gray-600">Beneficiaries served</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-gray-900">85</div>
+              <div className="text-2xl font-bold text-gray-900">{projects}</div>
               <div className="text-sm text-gray-600">Active projects</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-gray-900">450+</div>
+              <div className="text-2xl font-bold text-gray-900">{volunteers}+</div>
               <div className="text-sm text-gray-600">Volunteers</div>
             </div>
           </div>

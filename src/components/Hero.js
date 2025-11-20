@@ -42,13 +42,22 @@ const Hero = () => {
           100% { transform: translateY(0); }
         }
         .hero-content-animate {
-          animation: heroFadeIn 1s ease-out forwards;
-        }
-        .hero-cta-animate {
-          animation: heroGlow 1.4s ease-out forwards;
+          animation: heroFadeIn 0.9s ease-out forwards;
         }
         .hero-badge-animate {
           animation: heroSoftFloat 5s ease-in-out infinite;
+        }
+        .hero-title-animate {
+          animation: heroFadeIn 0.9s ease-out forwards;
+        }
+        .hero-subtitle-animate {
+          animation: heroFadeIn 0.9s ease-out forwards;
+        }
+        .hero-body-animate {
+          animation: heroFadeIn 0.9s ease-out forwards;
+        }
+        .hero-cta-animate {
+          animation: heroGlow 1.4s ease-out forwards;
         }
       `}</style>
 
@@ -59,20 +68,35 @@ const Hero = () => {
             <span className="tracking-wide uppercase text-xs lg:text-[0.7rem]">Faith in action Giving, sharing, hope</span>
           </div>
 
-          <h1 className="text-4xl lg:text-6xl font-bold mb-4 font-serif">Welcome to CRCCM Foundation</h1>
-          <p className="text-xl lg:text-2xl mb-6 font-light">Sharing resources, empowering communities, restoring hope.</p>
-          <p className="text-lg mb-8 opacity-90 text-gray-100">
+          <h1
+            className="text-4xl lg:text-6xl font-bold mb-4 font-serif hero-title-animate"
+            style={{ animationDelay: '0.1s' }}
+          >
+            Welcome to CRCCM Foundation
+          </h1>
+          <p
+            className="text-xl lg:text-2xl mb-6 font-light hero-subtitle-animate"
+            style={{ animationDelay: '0.2s' }}
+          >
+            Sharing resources, empowering communities, restoring hope.
+          </p>
+          <p
+            className="text-lg mb-8 opacity-90 text-gray-100 hero-body-animate"
+            style={{ animationDelay: '0.3s' }}
+          >
             We partner with local communities to provide education, healthcare, livelihoods and emergency
             relief. Join us in building brighter, more resilient futures.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center hero-cta-animate">
-            <Link
-              to="/contact"
+          <div className="flex flex-col sm:flex-row gap-4 justify-center hero-cta-animate" style={{ animationDelay: '0.4s' }}>
+            <a
+              href="https://wa.me/2348033059716"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
             >
               Get Involved
-            </Link>
+            </a>
             <Link
               to="/ministries"
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors duration-200"

@@ -17,9 +17,11 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">C</span>
-            </div>
+            <img
+              src="/images/logo.png"
+              alt="CRCCM logo"
+              className="w-13 h-12 object-contain"
+            />
             <div>
               <h1 className="text-2xl font-bold text-gray-800">CRCCM</h1>
               <p className="text-xs text-secondary font-semibold">Christ The Redeemer Cares and Compassion Ministry</p>
