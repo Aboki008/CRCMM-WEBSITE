@@ -65,9 +65,19 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center">
+        <div className="border-t border-gray-800 pt-8 text-center space-y-2">
           <p className="text-gray-400">
             © {new Date().getFullYear()} CRCCM Foundation. All rights reserved. | Empowering communities through giving & service
+          </p>
+          <p className="text-gray-500 text-sm">
+            <a
+              href="https://steps-plus.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-white underline-offset-4 hover:underline"
+            >
+              Click here to contact developer
+            </a>
           </p>
         </div>
       </div>

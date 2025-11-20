@@ -45,9 +45,9 @@ const programs = [
 // Local gallery images served from public/images
 const sampleImages = [
   '/images/faith.jpeg',
-  '/images/giving1.jpg',
+  '/images/love3.jpg',
   '/images/love.jpeg',
-  '/images/giving2.jpg',
+  '/images/giving3.jpg',
 ];
 
 const Ministries = () => {
