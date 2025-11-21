@@ -24,7 +24,7 @@ const Header = () => {
             />
             <div>
               <h1 className="text-2xl font-bold text-gray-800">CRCCM</h1>
-              <p className="text-xs text-secondary font-semibold">Christ The Redeemer Cares and Compassion Ministry</p>
+              <p className="text-xs text-secondary font-semibold">Christ The Redeemer Care and Compassion Ministry</p>
             </div>
           </Link>
 

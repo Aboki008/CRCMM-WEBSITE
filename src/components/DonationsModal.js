@@ -33,7 +33,7 @@ const DonationsModal = ({ isOpen, onClose, whatsappNumber = '2348033059716' }) =
           <div className="flex items-center justify-between">
             <div>
               <div className="text-sm text-gray-500">Account name</div>
-              <div className="font-medium">CRCCM Foundation</div>
+              <div className="font-medium">Meseko Josephine Taiwo</div>
             </div>
             <button onClick={() => copy('CRCCM Foundation')} className="text-primary text-sm">Copy</button>
           </div>
@@ -41,7 +41,7 @@ const DonationsModal = ({ isOpen, onClose, whatsappNumber = '2348033059716' }) =
           <div className="flex items-center justify-between">
             <div>
               <div className="text-sm text-gray-500">Account number</div>
-              <div className="font-medium">1234567890</div>
+              <div className="font-medium">3156548512</div>
             </div>
             <button onClick={() => copy('1234567890')} className="text-primary text-sm">Copy</button>
           </div>
@@ -49,7 +49,7 @@ const DonationsModal = ({ isOpen, onClose, whatsappNumber = '2348033059716' }) =
           <div className="flex items-center justify-between">
             <div>
               <div className="text-sm text-gray-500">Bank</div>
-              <div className="font-medium">Example Bank</div>
+              <div className="font-medium">First Bank</div>
             </div>
             <button onClick={() => copy('Example Bank')} className="text-primary text-sm">Copy</button>
           </div>

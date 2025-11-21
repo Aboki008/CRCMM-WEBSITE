@@ -13,7 +13,7 @@ const AboutPage = () => {
           <div className="prose prose-lg max-w-none space-y-10">
             <section>
               <h2 className="text-2xl font-bold text-gray-800 mb-4">
-                Christ the Redeemer Cares and Compassion Ministry (CRCCM)
+                Christ the Redeemer Care and Compassion Ministry (CRCCM)
               </h2>
               <p className="text-gray-700 mb-4">
                 CRCCM is a ministry that shares the love of Christ with orphans, widows, children, the less privileged

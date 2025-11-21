@@ -35,7 +35,7 @@ const About = () => {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6"></div>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed max-w-2xl mx-auto">
-              Christ the Redeemer Cares and Compassion Ministry (CRCCM) shares the love of Christ with orphans, widows,
+              Christ the Redeemer Care and Compassion Ministry (CRCCM) shares the love of Christ with orphans, widows,
               children and the less privileged by meeting their spiritual, physical and emotional needs in accordance
               with Acts 10:38.
             </p>
