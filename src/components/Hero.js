@@ -72,7 +72,7 @@ const Hero = () => {
             className="text-4xl lg:text-6xl font-bold mb-4 font-serif hero-title-animate"
             style={{ animationDelay: '0.1s' }}
           >
-            Welcome to CRCCM Foundation
+            Welcome to CRCCM
           </h1>
           <p
             className="text-xl lg:text-2xl mb-6 font-light hero-subtitle-animate"

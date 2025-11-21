@@ -14,7 +14,7 @@ const Footer = ({ onOpenDonate }) => {
                 <span className="text-white font-bold">C</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold">CRCCM Foundation</h3>
+                <h3 className="text-xl font-bold">CRCCM</h3>
                 <p className="text-secondary text-sm">Empowering communities through giving & service</p>
               </div>
             </div>
