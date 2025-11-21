@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import DonationsModal from './components/DonationsModal';
 import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import MinistriesPage from './pages/MinistriesPage';
@@ -19,6 +20,8 @@ const WhatsAppRedirect = () => {
 };
 
 function App() {
+  const [isFooterDonateOpen, setIsFooterDonateOpen] = useState(false);
+
   return (
     <Router>
       <div className="App min-h-screen flex flex-col">
@@ -32,7 +35,11 @@ function App() {
             <Route path="/contact" element={<WhatsAppRedirect />} />
           </Routes>
         </main>
-        <Footer />
+        <Footer onOpenDonate={() => setIsFooterDonateOpen(true)} />
+        <DonationsModal
+          isOpen={isFooterDonateOpen}
+          onClose={() => setIsFooterDonateOpen(false)}
+        />
       </div>
     </Router>
   );

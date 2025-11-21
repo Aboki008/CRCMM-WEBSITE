@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 
-const Footer = () => {
+const Footer = ({ onOpenDonate }) => {
   return (
     <footer className="bg-gray-900 text-gray-100 pt-12 pb-8 border-t border-gray-800">
       <div className="container mx-auto px-4">
@@ -43,7 +43,15 @@ const Footer = () => {
               <li><Link to="/about" className="text-gray-200 hover:text-white transition-colors">About</Link></li>
               <li><Link to="/ministries" className="text-gray-200 hover:text-white transition-colors">Programs</Link></li>
               <li><Link to="/contact" className="text-gray-200 hover:text-white transition-colors">Contact</Link></li>
-              <li><Link to="/contact?donate=true" className="text-primary hover:text-white transition-colors font-semibold">Donate</Link></li>
+              <li>
+                <button
+                  type="button"
+                  onClick={onOpenDonate}
+                  className="text-primary hover:text-white transition-colors font-semibold bg-transparent border-0 p-0 cursor-pointer"
+                >
+                  Donate
+                </button>
+              </li>
             </ul>
           </div>
 
