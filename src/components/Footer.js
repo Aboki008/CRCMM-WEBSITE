@@ -62,7 +62,7 @@ const Footer = ({ onOpenDonate }) => {
               <li>📍 25 Jubud Estate Little Rayfield. Jos Plateau State.</li>
               <li>📞 <a href="tel:+2348033059716" className="hover:text-white">+234 803 305 9716</a></li>
               <li>📞 <a href="tel:+2347011035443" className="hover:text-white">+234 701 103 5443</a></li>
-              <li>✉️ <a href="mailto:info@crccm.org" className="hover:text-white">info@crccm.org</a></li>
+              <li>✉️ <a href="mailto:info@crccm.org" className="hover:text-white">christcaresglobal@gmail.com</a></li>
               <li>
                 <a href="https://wa.me/2348033059716" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary hover:text-white">
                   <FaWhatsapp className="w-4 h-4" aria-hidden />
